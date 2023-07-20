@@ -1,0 +1,17 @@
+@use "./styles/partials/resets";
+@use "./styles/partials/variables" as *;
+@use "./styles/partials/breakpoints" as *;
+
+html {
+  min-width: 320px;
+  max-width: 1280px;
+}
+
+body {
+  height: 100%;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+}

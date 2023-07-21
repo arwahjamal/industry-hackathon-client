@@ -11,7 +11,12 @@
   &__logo-container {
     display: flex;
     justify-content: center;
-    margin-top: 10rem;
+  }
+
+  &__logo {
+    width: 7.75rem;
+    height: 5.31rem;
+    margin-top: 6rem;
   }
 
   &__header-container {
@@ -19,7 +24,7 @@
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    padding-top: 10rem;
+    padding-top: 1rem;
   }
 
   &__header-top,
@@ -44,6 +49,7 @@
     text-align: center;
     font-size: 0.8rem;
     line-height: 18px;
+    width: 90%;
     padding: 0 0 0.5rem 0;
     color: rgba(0, 0, 0, 1);
   }

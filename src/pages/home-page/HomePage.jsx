@@ -1,11 +1,13 @@
 import { Link } from "react-router-dom";
 import "./home-page.scss";
 
+import buddy from "../../assets/Icons/Buddy.png"; 
+
 const HomePage = () => {
   return (
     <main className="homepage">
       <div className="hompage__logo-container">
-        <img className="homepage__logo" alt="logo" src="/" />
+        <img className="homepage__logo" alt="logo" src={buddy} />
       </div>
       <div className="homepage__header-container">
         <h1 className="homepage__header-top">Your secure AI Health</h1>
@@ -13,7 +15,7 @@ const HomePage = () => {
       </div>
       <div className="homepage__bottom-container">
         <p className="homepage__description">
-          Allow Health Buddy to help you better track your activity goals{" "}
+        Allow Health Buddy to help you better track your activity goals {" "}
         </p>
         <div className="hompage__link-container">
           <Link to="/" className="homepage__link">
@@ -27,10 +29,12 @@ const HomePage = () => {
       <div className="hompage__privacy">
         <p className="homepage__privacy-content">
           Your use of Google Fit is governed by
-          <p className="homepage__privacy-term-bottom"><Link to="/" className="homepage__privacy-terms">
-            {" "}
-            Google Fit Terms of Service.
-          </Link></p>
+          <p className="homepage__privacy-term-bottom">
+            <Link to="/" className="homepage__privacy-terms">
+              {" "}
+              Google Fit Terms of Service.
+            </Link>
+          </p>
           Note: The{" "}
           <Link to="/" className="homepage__privacy-terms">
             Privacy Policy

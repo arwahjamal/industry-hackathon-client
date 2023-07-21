@@ -3,7 +3,7 @@ import "./home-page.scss";
 
 import buddy from "../../assets/Icons/Buddy.png"; 
 
-const HomePage = ({setOpenModal1}) => {
+export default function HomePage ({setOpenModal1}) {
   return (
     <main className="homepage">
       <div className="hompage__logo-container">
@@ -21,11 +21,9 @@ const HomePage = ({setOpenModal1}) => {
           <Link to="/" className="homepage__link">
             <p className="homepage__link-no">Not Now</p>
           </Link>
-          <Link to="/" className="homepage__link">
-            <button onClick={() => {setOpenModal1(true) }}>
+            <button onClick={() => setOpenModal1(true)}>
             <p className="homepage__link-yes">Allow Access</p>
             </button>
-          </Link>
         </div>
       </div>
       <div className="hompage__privacy">
@@ -48,5 +46,4 @@ const HomePage = ({setOpenModal1}) => {
   );
 };
 
-export default HomePage;
 

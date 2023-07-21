@@ -4,12 +4,16 @@
 
 .dashboard {
   background-color: #ffffff;
+  border: 1px solid lightgray;
+  padding: 0 1rem;
+  margin: 1rem 0;
+  border-radius: 5px;
 
   &__settings {
     display: flex;
     justify-content: right;
     align-items: center;
-    padding-top: 1rem;
+    padding-top: 2.5rem;
     &-info {
       margin-right: 1.5rem;
       width: 16px;

@@ -19,8 +19,8 @@
   top: 50%;
   left: 50%;
   z-index: 10;
-  &__container{
-    background-color: #FFFFFE;
+  &__container {
+    background-color: #fffffe;
     border-radius: 0.3125rem;
     padding: 3rem;
   }
@@ -47,8 +47,8 @@
     text-align: center;
     flex-direction: row;
     text-decoration: none;
-    background-color:rgba(66, 133, 244, 1);
-    color: #E9F0FD;
+    background-color: rgba(66, 133, 244, 1);
+    color: #e9f0fd;
     padding: 0.5em 3em;
     margin: 1rem 0;
     width: 100%;
@@ -64,36 +64,45 @@
   bottom: 0;
   background-color: rgba(89, 89, 89, 0.9);
 }
-.buddy{
-    display: flex;
-    justify-content: center;
-    width: 5rem;
-    margin-left: 3rem;
-    margin-bottom: 2rem;
+.buddy {
+  display: flex;
+  justify-content: center;
+  width: 5rem;
+  margin-left: 3rem;
+  margin-bottom: 2rem;
+  animation: bounce 1.5s infinite;
 }
-input{
-    float: right;
+@keyframes bounce{
+  10%{
+    bottom: 0px;
+  }
+  50%{
+    transform: translateY(5px);
+  }
 }
-.SettingModal__cancelbutton{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    flex-direction: row;
-    text-decoration: none;
-    background-color: #FFFFFE;
-    border: none;
-    padding: 0.5em 3em;
-    margin: 1rem 0;
-    width: 100%;
 
-}
-.SettingModal__cancelbutton:hover{
-    background-color: #E9F0FD;
-    color: rgba(66, 133, 244, 1);
-    border-radius: 2px;
 
+input {
+  float: right;
 }
-.button__div{
-    margin-top: 4rem;
+.SettingModal__cancelbutton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: row;
+  text-decoration: none;
+  background-color: #fffffe;
+  border: none;
+  padding: 0.5em 3em;
+  margin: 1rem 0;
+  width: 100%;
+}
+.SettingModal__cancelbutton:hover {
+  background-color: #e9f0fd;
+  color: rgba(66, 133, 244, 1);
+  border-radius: 2px;
+}
+.button__div {
+  margin-top: 4rem;
 }

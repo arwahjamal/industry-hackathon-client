@@ -16,7 +16,7 @@ export default function HomePage ({setOpenModal1, setOpenModal3}) {
       </div>
       <div className="homepage__bottom-container">
         <p className="homepage__description">
-          Allow Health Buddy to help you better track your activity goals{" "}
+          Allow Buddy to help you better track your activity goals{" "}
         </p>
         <div className="homepage__link-container">
           <button

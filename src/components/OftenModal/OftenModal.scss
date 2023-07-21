@@ -1,7 +1,7 @@
 @use "../../styles/partials/resets" as *;
 @use "../../styles/partials/breakpoints" as *;
 
-.SettingModal {
+.OftenModal {
   display: flex;
   flex-direction: column;
   padding: 1rem;
@@ -19,10 +19,12 @@
   top: 50%;
   left: 50%;
   z-index: 10;
-  &__container{
-    background-color: #FFFFFE;
+
+  &__container {
+    background-color: #fffffe;
     border-radius: 0.3125rem;
     padding: 3rem;
+    width: 27%;
   }
   &__title {
     display: flex;
@@ -32,13 +34,20 @@
     line-height: 30px;
     color: rgba(32, 33, 35, 1);
   }
-  &__question {
+  &__subtitle{
+    text-align: center;
+    line-height: 18px;
+    width: 100%;
+    padding: 1.5rem 0 0.5rem 0;
+    color: #28292c;
+  }
+  &__info {
     text-align: left;
     font-size: 0.8rem;
     line-height: 18px;
     width: 90%;
     padding: 1.5rem 0 0.5rem 0;
-    color: rgba(0, 0, 0, 1);
+    color: #28292c;
   }
   &__button {
     display: flex;
@@ -47,15 +56,14 @@
     text-align: center;
     flex-direction: row;
     text-decoration: none;
-    background-color:rgba(66, 133, 244, 1);
-    color: #E9F0FD;
+    background-color: rgba(66, 133, 244, 1);
+    color: #e9f0fd;
     padding: 0.5em 3em;
     margin: 1rem 0;
     width: 100%;
     border-radius: 2px;
   }
 }
-
 #overlay {
   position: fixed;
   top: 0;
@@ -64,36 +72,22 @@
   bottom: 0;
   background-color: rgba(89, 89, 89, 0.9);
 }
-.buddy{
+.buddy2{
     display: flex;
     justify-content: center;
-    width: 5rem;
-    margin-left: 3rem;
+    width: 8rem;
     margin-bottom: 2rem;
+    margin: 2rem;
+    margin-left: 3rem;
 }
-input{
-    float: right;
+input {
+  float: right;
 }
-.SettingModal__cancelbutton{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    flex-direction: row;
-    text-decoration: none;
-    background-color: #FFFFFE;
-    border: none;
-    padding: 0.5em 3em;
-    margin: 1rem 0;
-    width: 100%;
 
-}
-.SettingModal__cancelbutton:hover{
-    background-color: #E9F0FD;
-    color: rgba(66, 133, 244, 1);
-    border-radius: 2px;
-
-}
 .button__div{
-    margin-top: 4rem;
+    margin-top: 1rem;
+}
+
+.form{
+    margin-top: 2rem;
 }

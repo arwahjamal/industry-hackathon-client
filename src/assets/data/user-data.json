@@ -1,0 +1,54 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "fitUser123",
+      "email": "user123@gmail.com",
+      "height_cm": 170,
+      "weight_kg": 65,
+      "calories": 300,
+      "distance": 10,
+      "activity_time": 60
+    },
+    {
+      "id": 2,
+      "name": "activeUser456",
+      "email": "user456@gmail.com",
+      "height_cm": 180,
+      "weight_kg": 75,
+      "calories": 350,
+      "distance": 12,
+      "activity_time": 80
+    },
+    {
+      "id": 3,
+      "name": "gymGoer789",
+      "email": "user789@gmail.com",
+      "height_cm": 175,
+      "weight_kg": 68,
+      "calories": 400,
+      "distance": 15,
+      "activity_time": 90
+    },
+    {
+      "id": 4,
+      "name": "fitnessFan890",
+      "email": "user890@gmail.com",
+      "height_cm": 165,
+      "weight_kg": 62,
+      "calories": 280,
+      "distance": 8,
+      "activity_time": 50
+    },
+    {
+      "id": 5,
+      "name": "workoutWarrior901",
+      "email": "user901@gmail.com",
+      "height_cm": 182,
+      "weight_kg": 77,
+      "calories": 380,
+      "distance": 14,
+      "activity_time": 85
+    }
+  ]
+}

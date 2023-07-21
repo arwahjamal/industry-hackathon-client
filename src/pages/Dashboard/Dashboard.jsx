@@ -66,7 +66,7 @@ const Dashboard = () => {
         <article className="dashboard__todo-card">
           <div className="dashboard__todo-container">
             <h2 className="dashboard__todo-title">
-              Fit isn't connected to Apple Health
+              Buddy isn't tracking any data
             </h2>
             <img
               className="dashboard__todo-close"
@@ -86,7 +86,7 @@ const Dashboard = () => {
               </p>
             </div>
             <p className="dashboard__todo-text">
-              Turn on access to Health to add your workouts, steps, and distance
+              Turn on access to Buddy's tracking to add your workouts, steps, and distance
               automatically
             </p>
             <p className="dashboard__todo-text-hyperlink dashboard__todo-text-hyperlink--bold">
@@ -112,7 +112,7 @@ const Dashboard = () => {
                 <p className="dashboard__todo-text-hyperlink">Achieved</p>
               </div>
               {/* In a real product, this would be created using .map */}
-              <div className="dashboard__todo-goals-days-container">
+              <div className="dashboard__todo-goals-days-container--flex">
                 <div className="dashboard__todo-goals-days-container-date">
                   <img
                     className="dashboard__todo-goals-monitor"

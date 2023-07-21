@@ -1,6 +1,5 @@
 import './SettingModal.scss'
 import React from 'react';
-import { useState } from 'react';
 
 export default function SettingModal ({setOpenModal1 , setOpenModal2}){
 

@@ -3,7 +3,7 @@ import "./home-page.scss";
 
 import buddy from "../../assets/Icons/Buddy.png"; 
 
-const HomePage = ({setOpenModal1}) => {
+const HomePage = ({setOpenModal1, setOpenModal3}) => {
   return (
     <main className="homepage">
       <div className="hompage__logo-container">
@@ -18,7 +18,8 @@ const HomePage = ({setOpenModal1}) => {
         Allow Health Buddy to help you better track your activity goals {" "}
         </p>
         <div className="hompage__link-container">
-          <Link to="/" className="homepage__link">
+          <Link to="/dashboard" className="homepage__link">
+            <button onClick={() => {setOpenModal3(true) }}></button>
             <p className="homepage__link-no">Not Now</p>
           </Link>
           <Link to="/" className="homepage__link">

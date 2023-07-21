@@ -35,7 +35,7 @@ export default function OftenModal() {
         </form>
         <div className="button__div">
           <Link to="/dashboard">
-            <button>
+            <button className="OftenModal__button">
               Finish
             </button>
           </Link>

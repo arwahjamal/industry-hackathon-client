@@ -1,0 +1,80 @@
+@use "../../styles/partials/resets" as *;
+@use "../../styles/partials/breakpoints" as *;
+
+.NotNowModal {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  padding: 1rem;
+  position: relative;
+  background-color: white;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 10;
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fffffe;
+    border-radius: 0.3125rem;
+    padding: 3rem;
+  }
+  &__title {
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 30px;
+    color: rgba(66, 133, 244, 1);
+    margin-bottom: 1rem;
+  }
+  &__text {
+    margin-top: 1.5rem;
+    text-align: center;
+  }
+  &__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: row;
+    text-decoration: none;
+    background-color: rgba(66, 133, 244, 1);
+    color: #e9f0fd;
+    padding: 0.5em 3em;
+    margin: 1rem 0;
+    width: 100%;
+    border-radius: 2px;
+    border: none;
+    &:hover {
+      background-color: rgb(30, 114, 250);
+      border-radius: 2px;
+    }
+    &-div {
+      margin-top: 2rem;
+    }
+  }
+  &__buddy {
+    width: 5rem;
+    margin: 1rem 0;
+  }
+}
+
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(89, 89, 89, 0.9);
+}
+
+a {
+    text-decoration: none;
+}

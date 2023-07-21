@@ -1,20 +1,25 @@
+import "./NotNowModal.scss";
+import buddy from "../../assets/Icons/Buddy.png";
+import { Link } from "react-router-dom";
 
-const NotNowModal = ({setOpenModal3}) => {
+const NotNowModal = ({ setOpenModal3 }) => {
   return (
-    <>
-      <h1>No Worries!</h1>
-        <p>If you change your mind, let me know by clicking/tapping
-            me on your dashboard!
+    <div className="NotNowModal" id="overlay">
+      <div className="NotNowModal__container">
+        <h1 className="NotNowModal__title">No Worries!</h1>
+        <img className="NotNowModal__buddy" src={buddy} alt="Buddy" />
+        <p className="NotNowModal__text">
+          If you change your mind, you can change your settings at any time by
+           clicking or tapping me!
         </p>
-      <button
-        onClick={() => {
-          setOpenModal3(false);
-        }}
-      >
-        Continue
-      </button>
-    </>
+        <div className="NotNowModal__button-div">
+          <Link to="/dashboard">
+            <button className="NotNowModal__button">Continue</button>
+          </Link>
+        </div>
+      </div>
+    </div>
   );
-}
+};
 
-export default NotNowModal
+export default NotNowModal;

@@ -13,7 +13,7 @@ export default function MainHomePage(){
 
     return(
         <>
-        <HomePage setOpenModal1={setOpenModal1}/>
+        <HomePage setOpenModal1={setOpenModal1} setOpenModal3={setOpenModal3}/>
         {openModal1 && (
             <SettingModal setOpenModal1={setOpenModal1} setOpenModal2={setOpenModal2}/>)}
         {openModal2 && (

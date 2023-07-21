@@ -1,8 +1,9 @@
 import "./OftenModal.scss";
 import React from "react";
 import buddy from '../../assets/Icons/Buddy.png';
+import { Link } from "react-router-dom";
 
-export default function OftenModal({ setOpenModal2 }) {
+export default function OftenModal() {
   return (
     <div className="OftenModal" id="overlay">
       <div className="OftenModal__container">
@@ -13,7 +14,7 @@ export default function OftenModal({ setOpenModal2 }) {
         <h5 className="OftenModal__subtitle">
           How Often Would You Like Buddy to Interact with you?
         </h5>
-        <img  className='buddy2' src={buddy} alt="" />
+        <img className="buddy2" src={buddy} alt="" />
         <form className="form">
           <div>
             <label className="OftenModal__info">Every Hour</label>
@@ -33,12 +34,11 @@ export default function OftenModal({ setOpenModal2 }) {
           </div>
         </form>
         <div className="button__div">
-          <button
-            className="OftenModal__button"
-            onClick={() => setOpenModal2(false)}
-          >
-            Finish
-          </button>
+          <Link to="/dashboard">
+            <button>
+              Finish
+            </button>
+          </Link>
         </div>
       </div>
     </div>

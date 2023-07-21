@@ -59,6 +59,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
   }
 
   &__link {
@@ -67,18 +68,17 @@
   }
 
   &__link-no {
-    justify-content: center;
-    align-items: center;
     text-align: center;
-    text-decoration: none;
     background-color: rgba(66, 133, 244, 1);
     padding: 0.5em 3em;
-    margin: 1rem 0;
+    // text-align: center;
+    // background-color: rgba(66, 133, 244, 1);
+    // padding: 0.5em 3em;
+    // margin: 1rem 0;
+    // border: none;
   }
 
   &__link-yes {
-    justify-content: center;
-    align-items: center;
     text-align: center;
     background-color: rgba(66, 133, 244, 1);
     padding: 0.5em 3em;

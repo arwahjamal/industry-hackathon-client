@@ -15,16 +15,15 @@ export default function HomePage ({setOpenModal1, setOpenModal3}) {
       </div>
       <div className="homepage__bottom-container">
         <p className="homepage__description">
-        Allow Health Buddy to help you better track your activity goals {" "}
+          Allow Health Buddy to help you better track your activity goals{" "}
         </p>
-        <div className="hompage__link-container">
-          <Link to="/dashboard" className="homepage__link">
-            <button onClick={() => {setOpenModal3(true) }}></button>
-            <p className="homepage__link-no">Not Now</p>
-          </Link>
-            <button onClick={() => setOpenModal1(true)}>
+        <div className="homepage__link-container">
+          <button onClick={() => setOpenModal3(true)}>
+            <p className="homepage__link-yes">Not Now</p>
+          </button>
+          <button onClick={() => setOpenModal1(true)}>
             <p className="homepage__link-yes">Allow Access</p>
-            </button>
+          </button>
         </div>
       </div>
       <div className="hompage__privacy">

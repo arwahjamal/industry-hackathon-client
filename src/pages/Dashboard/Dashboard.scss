@@ -1,0 +1,104 @@
+@use '../../styles/breakpoints' as *;
+@use '../../styles/resets' as *;
+@use '../../styles/variables' as *;
+
+.dashboard {
+    background-color: lightgray;
+
+    &__settings{
+
+    }
+    &__header{
+
+        &-monitor{
+
+        }
+        &-container{
+
+            &-img{
+
+            }
+            &-text{
+
+            }
+        }
+    }
+
+    &__todo{
+        padding: 0 0.5rem;
+        background-color: lightgray;
+
+        &-settings{
+            display: flex;
+            align-items: center;
+            margin-bottom: 0.5rem;
+        }
+        
+        &-card{
+            padding: 0.5rem;
+            // border: 1px red solid;
+            box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            background-color: white;
+            margin: 0.8rem 0;
+        }
+
+        &-container{
+            display: flex;
+            justify-content: space-between;
+        }
+        &-title{
+            font-size: 0.8rem;
+        }
+        &-close{
+
+        }
+        &-info{
+
+        }
+        &-text{
+            font-size: 0.7rem;
+            margin-bottom: 0.8rem;
+            &-hyperlink{
+                font-size: 0.6rem;
+                color: blue;
+                &--bold{
+                    font-weight: 600;
+                    color: blue;
+                }
+            }
+            &--goals{
+                margin-left: 1rem;
+            }
+        }
+        &-chevron{
+
+        }
+        &-goals{
+
+            &-days{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                &-text{
+                    font-size: 1.2rem;
+                    font-weight: 600;
+                    color: blue;
+                }
+            }
+            &-dates{
+
+            }
+            &-achieved{
+
+            }
+        }
+
+        &-target{
+
+            &-date{
+                font-size: 0.7rem;
+            }
+        }
+    }
+}

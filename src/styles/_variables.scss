@@ -1,6 +1,5 @@
-@use "./styles/partials/resets";
-@use "./styles/partials/variables" as *;
-@use "./styles/partials/breakpoints" as *;
+@use './breakpoints' as *;
+@use './resets' as *;
 
 html {
   min-width: 320px;

@@ -1,12 +1,11 @@
     import { Link } from "react-router-dom";
-
     import "./home-page.scss";
     
     const HomePage = () => {
       return (
         <div className="homepage">
           <main className="homepage__main">
-            <img className="homepage__logo" />
+            <img className="homepage__logo" alt="logo" src="/" />
             <h1 className="homepage__header">Meet, Buddy</h1>
             <p className="homepage__description">Description of Buddy</p>
             <div className="hompage__link-container">

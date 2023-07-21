@@ -1,3 +1,92 @@
-@use "./../../styles/_partials/resets";
-@use "./../../styles/_partials/variables" as *;
-@use "./../../styles/_partials/breakpoints" as *;
+@use "../../styles/partials/resets";
+@use "../../styles/partials/breakpoints" as *;
+
+.homepage {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  align-items: center;
+  justify-content: center;
+
+  &__logo-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10rem;
+  }
+
+  &__header-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding-top: 10rem;
+  }
+
+  &__header-top,
+  &__header-bottom {
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 30px;
+    color: rgba(32, 33, 35, 1);
+  }
+
+  &__bottom-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10rem;
+    padding: 1rem 0;
+    width: 85%;
+  }
+
+  &__description {
+    text-align: center;
+    font-size: 0.8rem;
+    line-height: 18px;
+    padding: 0 0 0.5rem 0;
+    color: rgba(0, 0, 0, 1);
+  }
+
+  &__link-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: white;
+  }
+
+  &__link-no {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    background-color: rgba(66, 133, 244, 1);
+    padding: 0.5em 3em;
+    margin: 1rem 0;
+  }
+
+  &__link-yes {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(66, 133, 244, 1);
+    padding: 0.5em 3em;
+  }
+
+  &__privacy-content {
+    margin-top: 3rem;
+    font-size: 0.8rem;
+    text-align: center;
+    line-height: 18px;
+    color: rgba(0, 0, 0, 1);
+  }
+
+  &__privacy-terms {
+    text-decoration: none;
+    color: rgba(66, 133, 244, 1);
+  }
+}

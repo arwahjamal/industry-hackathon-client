@@ -1,7 +1,7 @@
 @use "../../styles/partials/resets" as *;
 @use "../../styles/partials/breakpoints" as *;
 
-.OftenModal {
+.NotNowModal {
   display: flex;
   flex-direction: column;
   padding: 1rem;
@@ -19,35 +19,24 @@
   top: 50%;
   left: 50%;
   z-index: 10;
-
   &__container {
-    max-width: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: #fffffe;
     border-radius: 0.3125rem;
     padding: 3rem;
   }
   &__title {
-    display: flex;
-    justify-content: center;
     font-size: 1.5rem;
     font-weight: 400;
     line-height: 30px;
-    color: rgba(32, 33, 35, 1);
+    color: rgba(66, 133, 244, 1);
+    margin-bottom: 1rem;
   }
-  &__subtitle{
+  &__text {
+    margin-top: 1.5rem;
     text-align: center;
-    line-height: 18px;
-    width: 100%;
-    padding: 1.5rem 0 0.5rem 0;
-    color: #28292c;
-  }
-  &__info {
-    text-align: left;
-    font-size: 0.8rem;
-    line-height: 18px;
-    width: 90%;
-    padding: 1.5rem 0 0.5rem 0;
-    color: #28292c;
   }
   &__button {
     display: flex;
@@ -59,17 +48,25 @@
     background-color: rgba(66, 133, 244, 1);
     color: #e9f0fd;
     padding: 0.5em 3em;
-    margin: 1.5rem 0 1rem 0;
+    margin: 1rem 0;
     width: 100%;
     border-radius: 2px;
     border: none;
     &:hover {
-      cursor: pointer;
       background-color: rgb(30, 114, 250);
       border-radius: 2px;
+      cursor: pointer;
+    }
+    &-div {
+      margin-top: 2rem;
     }
   }
+  &__buddy {
+    width: 5rem;
+    margin: 1rem 0;
+  }
 }
+
 #overlay {
   position: fixed;
   top: 0;
@@ -78,31 +75,7 @@
   bottom: 0;
   background-color: rgba(89, 89, 89, 0.9);
 }
-.buddy2{
-    display: flex;
-    justify-content: center;
-    width: 8rem;
-    margin-bottom: 2rem;
-    margin: 2rem;
-    margin-left: 3rem;
-    animation: bounce 1.5s infinite;
-  }
-  @keyframes bounce{
-    10%{
-      bottom: 0px;
-    }
-    50%{
-      transform: translateY(5px);
-    }
-  }
-input {
-  float: right;
-}
 
-.button__div{
-    margin-top: 1rem;
-}
-
-.form{
-    margin-top: 2rem;
+a {
+    text-decoration: none;
 }

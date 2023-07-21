@@ -2,7 +2,7 @@ import "./OftenModal.scss";
 import React from "react";
 import buddy from "../../assets/Icons/Buddy.png";
 
-export default function OftenModal({ setOpenModal2 }) {
+export default function OftenModal() {
   return (
     <div className="OftenModal" id="overlay">
       <div className="OftenModal__container">
@@ -41,12 +41,11 @@ export default function OftenModal({ setOpenModal2 }) {
           </div>
         </form>
         <div className="button__div">
-          <button
-            className="OftenModal__button"
-            onClick={() => setOpenModal2(false)}
-          >
-            Finish
-          </button>
+          <Link to="/dashboard">
+            <button className="OftenModal__button">
+              Finish
+            </button>
+          </Link>
         </div>
       </div>
     </div>

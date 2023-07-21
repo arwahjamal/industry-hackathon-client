@@ -3,7 +3,7 @@ import "./home-page.scss";
 
 import buddy from "../../assets/Icons/Buddy.png"; 
 
-export default function HomePage ({setOpenModal1}) {
+export default function HomePage ({setOpenModal1, setOpenModal3}) {
   return (
     <main className="homepage">
       <div className="hompage__logo-container">
@@ -15,15 +15,21 @@ export default function HomePage ({setOpenModal1}) {
       </div>
       <div className="homepage__bottom-container">
         <p className="homepage__description">
-        Allow Health Buddy to help you better track your activity goals {" "}
+          Allow Health Buddy to help you better track your activity goals{" "}
         </p>
-        <div className="hompage__link-container">
-          <Link to="/" className="homepage__link">
-            <p className="homepage__link-no">Not Now</p>
-          </Link>
-            <button onClick={() => setOpenModal1(true)}>
+        <div className="homepage__link-container">
+          <button
+            className="homepage__link-button"
+            onClick={() => setOpenModal1(true)}
+          >
             <p className="homepage__link-yes">Allow Access</p>
-            </button>
+          </button>
+          <button
+            className="homepage__link-button homepage__link-button-no"
+            onClick={() => setOpenModal3(true)}
+          >
+            <p className="homepage__link-no">Not Now</p>
+          </button>
         </div>
       </div>
       <div className="hompage__privacy">

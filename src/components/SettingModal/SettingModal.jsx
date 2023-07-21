@@ -1,5 +1,4 @@
 import './SettingModal.scss'
-import React from 'react';
 import buddy from '../../assets/Icons/Buddy=Squished.png'
 
 export default function SettingModal({ setOpenModal1, setOpenModal2 }) {

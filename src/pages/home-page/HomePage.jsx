@@ -1,9 +1,10 @@
+
 import { Link } from "react-router-dom";
 import "./home-page.scss";
 
 import buddy from "../../assets/Icons/Buddy.png"; 
 
-const HomePage = () => {
+const HomePage = ({setOpenModal1}) => {
   return (
     <main className="homepage">
       <div className="hompage__logo-container">
@@ -22,7 +23,9 @@ const HomePage = () => {
             <p className="homepage__link-no">Not Now</p>
           </Link>
           <Link to="/" className="homepage__link">
+            <button onClick={() => {setOpenModal1(true) }}>
             <p className="homepage__link-yes">Allow Access</p>
+            </button>
           </Link>
         </div>
       </div>

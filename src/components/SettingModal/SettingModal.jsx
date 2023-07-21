@@ -1,7 +1,7 @@
 import './SettingModal.scss'
 import buddy from '../../assets/Icons/Buddy=Squished.png'
 
-export default function SettingModal({ setOpenModal1, setOpenModal2 }) {
+export default function SettingModal({ setOpenModal1, setOpenModal2, setOpenModal3 }) {
 
 
     return (
@@ -31,7 +31,7 @@ export default function SettingModal({ setOpenModal1, setOpenModal2 }) {
                 </form>
                 <div className='button__div'>
                 <button className='SettingModal__button' onClick={() => { setOpenModal2(true); setOpenModal1(false) }}>Continue </button>
-                <button className='SettingModal__cancelbutton' onClick={() => setOpenModal1(false)}>Cancel</button>
+                <button className='SettingModal__cancelbutton' onClick={() => setOpenModal3(true)}>Cancel</button>
                 </div>
             </div>
         </div>

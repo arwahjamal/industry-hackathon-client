@@ -15,7 +15,7 @@ export default function MainHomePage(){
         <>
         <HomePage setOpenModal1={setOpenModal1} setOpenModal3={setOpenModal3}/>
         {openModal1 && (
-            <SettingModal setOpenModal1={setOpenModal1} setOpenModal2={setOpenModal2}/>)}
+            <SettingModal setOpenModal1={setOpenModal1} setOpenModal2={setOpenModal2} setOpenModal3={setOpenModal3}/>)}
         {openModal2 && (
             <OftenModal setOpenModal2={setOpenModal2}/>)}
         {openModal3 && (

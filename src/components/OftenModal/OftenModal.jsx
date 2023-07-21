@@ -1,6 +1,7 @@
 import "./OftenModal.scss";
 import React from "react";
 import buddy from "../../assets/Icons/Buddy.png";
+import { Link } from "react-router-dom";
 
 export default function OftenModal() {
   return (

@@ -10,8 +10,9 @@ export default function HomePage ({setOpenModal1, setOpenModal3}) {
         <img className="homepage__logo" alt="logo" src={buddy} />
       </div>
       <div className="homepage__header-container">
-        <h1 className="homepage__header-top">Your secure AI Health</h1>
-        <h1 className="homepage__header-bottom">Buddy is here</h1>
+        {/* Should only have 1 h1 per page */}
+        <h1 className="homepage__header-top">Meet Buddy,</h1>
+        <h1 className="homepage__header-bottom">Your Secure AI Health</h1>
       </div>
       <div className="homepage__bottom-container">
         <p className="homepage__description">

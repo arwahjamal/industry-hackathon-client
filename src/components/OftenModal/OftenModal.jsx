@@ -1,6 +1,6 @@
 import "./OftenModal.scss";
 import React from "react";
-import buddy from '../../assets/Icons/Buddy.png';
+import buddy from "../../assets/Icons/Buddy.png";
 
 export default function OftenModal({ setOpenModal2 }) {
   return (
@@ -13,23 +13,31 @@ export default function OftenModal({ setOpenModal2 }) {
         <h5 className="OftenModal__subtitle">
           How Often Would You Like Buddy to Interact with you?
         </h5>
-        <img  className='buddy2' src={buddy} alt="" />
+        <img className="buddy2" src={buddy} alt="" />
         <form className="form">
           <div>
-            <label className="OftenModal__info">Every Hour</label>
-            <input type="radio" />
+            <label className="OftenModal__info">
+              Every Hour
+              <input type="radio" name="frequency" value="hourly" />
+            </label>
           </div>
           <div>
-            <label className="OftenModal__info">Every 3 Hours</label>
-            <input type="radio" />
+            <label className="OftenModal__info">
+              Every 3 Hours
+              <input type="radio" name="frequency" value="3hours" />
+            </label>
           </div>
           <div>
-            <label className="OftenModal__info">Every 6 Hours</label>
-            <input type="radio" />
+            <label className="OftenModal__info">
+              Every 6 Hours
+              <input type="radio" name="frequency" value="6hours" />
+            </label>
           </div>
           <div>
-            <label className="OftenModal__info">Once a Day</label>
-            <input type="radio" />
+            <label className="OftenModal__info">
+              Once a Day
+              <input type="radio" name="frequency" value="daily" />
+            </label>
           </div>
         </form>
         <div className="button__div">

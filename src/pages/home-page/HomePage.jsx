@@ -1,7 +1,8 @@
     import { Link } from "react-router-dom";
     import "./home-page.scss";
     
-    const HomePage = () => {
+    export default function HomePage({setOpenModal1}){
+
       return (
         <div className="homepage">
           <main className="homepage__main">
@@ -12,9 +13,9 @@
               <Link to="/">
                 <p className="homepage__link-no">Not Now</p>
               </Link>
-              <Link to="/">
+              <button onClick={() => {setOpenModal1(true) }}>
                 <p className="homepage__link-yes">Connect</p>
-              </Link>
+              </button>
             </div>
     
             <div className="hompage__privacy">
@@ -29,5 +30,4 @@
         </div>
       );
     };
-    
-    export default HomePage;
+

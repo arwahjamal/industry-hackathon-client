@@ -1,27 +1,65 @@
 import "./Dashboard.scss";
+import heart from "../../assets/Icons/Heart_Icon.png";
+import shoe from "../../assets/Icons/Shoe_Icon.png";
+import monitor from "../../assets/Icons/Dashboard circles.png";
+import close from "../../assets/Icons/X_icon.png";
+import info from "../../assets/Icons/info_icon.png";
+import arrow from "../../assets/Icons/Arrow_Icon.png";
+import logo from "../../assets/Icons/Google__G__Logo.svg.png";
+import data from "../../assets/data/user-data.json";
 
 const Dashboard = () => {
   return (
     <main className="dashboard">
-      {/* Information/details button & display pic */}
-      <div className="dashboard__settings"></div>
+      <div className="dashboard__settings">
+        <img
+          className="dashboard__settings-info"
+          src={info}
+          alt="Info Icon"
+        ></img>
+        <img
+          className="dashboard__settings-avatar"
+          src={logo}
+          alt="Google Logo"
+        ></img>
+      </div>
       <header className="dashboard__header">
-        {/* Heart pts and steps monitoring */}
-        <img className="dashboard__header-monitor"></img>
-        {/* Heart pts and steps (will need 2 images and they don't need to be BG) */}
+        <img
+          className="dashboard__header-monitor"
+          src={monitor}
+          alt="Dashboard Monitor"
+        ></img>
         <div className="dashboard__header-container">
           <img
             className="dashboard__header-container-img"
-            src=""
-            alt="Heart Pts Icon"
+            src={heart}
+            alt="Heart Icon"
           ></img>
           <p className="dashboard__header-container-text">Heart Pts</p>
           <img
             className="dashboard__header-container-img"
-            src=""
-            alt="Steps Icon"
+            src={shoe}
+            alt="Shoe Icon"
           ></img>
           <p className="dashboard__header-container-text">Steps</p>
+        </div>
+        <div className="dashboard__header-container dashboard__header-container-stats">
+          <div className="dashboard__header-container-totals">
+            <p className="dashboard__header-container-totals-number">{data.users[0].calories}</p>
+            <p className="dashboard__header-container-totals-text">cal</p>
+          </div>
+          <div className="dashboard__header-container-totals">
+            <p className="dashboard__header-container-totals-number">{data.users[0].distance}</p>
+            <p className="dashboard__header-container-totals-text">mi</p>
+          </div>
+          <div className="dashboard__header-container-totals-move">
+            <p className="dashboard__header-container-totals-number dashboard__header-container-totals-number-move">
+              {data.users[0].activity_time}
+            </p>
+            <p className="dashboard__header-container-totals-text dashboard__header-container-totals-text-move">
+              Move Min
+            </p>
+          </div>
         </div>
       </header>
       <body className="dashboard__todo">
@@ -30,13 +68,17 @@ const Dashboard = () => {
             <h2 className="dashboard__todo-title">
               Fit isn't connected to Apple Health
             </h2>
-            <img className="dashboard__todo-close" src="" alt="x"></img>
+            <img
+              className="dashboard__todo-close"
+              src={close}
+              alt="Close Icon"
+            ></img>
           </div>
           <div>
             <div className="dashboard__todo-settings">
               <img
                 className="dashboard__todo-info"
-                src=""
+                src={info}
                 alt="Details Icon"
               ></img>
               <p className="dashboard__todo-text-hyperlink">
@@ -57,50 +99,90 @@ const Dashboard = () => {
             <h2 className="dashboard__todo-title">Your daily goals</h2>
             <img
               className="dashboard__todo-chevron"
-              src=""
+              src={arrow}
               alt="Right Arrow"
             ></img>
           </div>
           <p className="dashboard__todo-text">Last 7 days</p>
           <div className="dashboard__todo-goals">
+            {/* In a real product, this would be created using .map */}
             <div className="dashboard__todo-goals-days">
-              <p className="dashboard__todo-goals-days-text">0/7</p>
-              {/* In a real product, this would be created using .map */}
-              <div className="dashboard__todo-goals-dates">
-                <img src="" alt="x"></img>
-                <img src="" alt="x"></img>
-                <img src="" alt="x"></img>
-                <img src="" alt="x"></img>
-                <img src="" alt="x"></img>
-                <img src="" alt="x"></img>
-                <img src="" alt="x"></img>
+              <div className="dashboard__todo-goals-days-container">
+                <p className="dashboard__todo-goals-days-text">0/7</p>
+                <p className="dashboard__todo-text-hyperlink">Achieved</p>
               </div>
-            </div>
-            <div className="dashboard__todo-goals-days">
-              <p className="dashboard__todo-text-hyperlink">Achieved</p>
               {/* In a real product, this would be created using .map */}
-              <div className="dashboard__todo-goals-dates">
-                <span className="dashboard__todo-text dashboard__todo-text--goals">
-                  F
-                </span>
-                <span className="dashboard__todo-text dashboard__todo-text--goals">
-                  S
-                </span>
-                <span className="dashboard__todo-text dashboard__todo-text--goals">
-                  S
-                </span>
-                <span className="dashboard__todo-text dashboard__todo-text--goals">
-                  M
-                </span>
-                <span className="dashboard__todo-text dashboard__todo-text--goals">
-                  T
-                </span>
-                <span className="dashboard__todo-text dashboard__todo-text--goals">
-                  W
-                </span>
-                <span className="dashboard__todo-text dashboard__todo-text--goals">
-                  T
-                </span>
+              <div className="dashboard__todo-goals-days-container">
+                <div className="dashboard__todo-goals-days-container-date">
+                  <img
+                    className="dashboard__todo-goals-monitor"
+                    src={monitor}
+                    alt="x"
+                  ></img>
+                  <p className="dashboard__todo-text dashboard__todo-text-goals">
+                    F
+                  </p>
+                </div>
+                <div className="dashboard__todo-goals-days-container-date">
+                  <img
+                    className="dashboard__todo-goals-monitor"
+                    src={monitor}
+                    alt="x"
+                  ></img>
+                  <p className="dashboard__todo-text dashboard__todo-text-goals">
+                    S
+                  </p>
+                </div>
+                <div className="dashboard__todo-goals-days-container-date">
+                  <img
+                    className="dashboard__todo-goals-monitor"
+                    src={monitor}
+                    alt="x"
+                  ></img>
+                  <p className="dashboard__todo-text dashboard__todo-text-goals">
+                    S
+                  </p>
+                </div>
+                <div className="dashboard__todo-goals-days-container-date">
+                  <img
+                    className="dashboard__todo-goals-monitor"
+                    src={monitor}
+                    alt="x"
+                  ></img>
+                  <p className="dashboard__todo-text dashboard__todo-text-goals">
+                    M
+                  </p>
+                </div>
+                <div className="dashboard__todo-goals-days-container-date">
+                  <img
+                    className="dashboard__todo-goals-monitor"
+                    src={monitor}
+                    alt="x"
+                  ></img>
+                  <p className="dashboard__todo-text dashboard__todo-text-goals">
+                    T
+                  </p>
+                </div>
+                <div className="dashboard__todo-goals-days-container-date">
+                  <img
+                    className="dashboard__todo-goals-monitor"
+                    src={monitor}
+                    alt="x"
+                  ></img>
+                  <p className="dashboard__todo-text dashboard__todo-text-goals">
+                    W
+                  </p>
+                </div>
+                <div className="dashboard__todo-goals-days-container-date">
+                  <img
+                    className="dashboard__todo-goals-monitor"
+                    src={monitor}
+                    alt="x"
+                  ></img>
+                  <p className="dashboard__todo-text dashboard__todo-text-goals">
+                    T
+                  </p>
+                </div>
               </div>
             </div>
           </div>

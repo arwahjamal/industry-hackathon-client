@@ -1,4 +1,3 @@
-
 import { Link } from "react-router-dom";
 import "./home-page.scss";
 
@@ -50,3 +49,4 @@ const HomePage = ({setOpenModal1}) => {
 };
 
 export default HomePage;
+
